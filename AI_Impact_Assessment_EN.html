@@ -437,12 +437,9 @@ function showResult(){
         <div class="submit-block-title">📤 Submit Your Results</div>
         <input class="name-input" id="name-input" type="text" placeholder="Enter your full name" />
         <input class="name-input" id="email-input" type="email" placeholder="Enter your email address (a copy will be sent to you)" />
-        <div class="submit-note">Enter your name and email, then click Submit. Your results will be recorded automatically, and a copy will be sent to your inbox.</div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;">
-          <button class="btn primary" id="submit-btn" onclick="submitToSharePoint(${avg.toFixed(2)},'${lv.key}','${rt.label}',${JSON.stringify(scores)})">📊 Submit Results</button>
-          <button class="btn mail-btn" id="mail-btn" onclick="sendMail(${avg.toFixed(2)},'${lv.key}','${rt.label}',${JSON.stringify(scores)})">📧 Send by Email</button>
-        </div>
-        <div class="success-msg" id="success-msg">✅ Your results have been submitted successfully. Thank you for completing the assessment.</div>
+        <div class="submit-note">Enter your name and email, then click Send by Email. Outlook will open with your results pre-filled. A copy will be sent to your inbox.</div>
+        <button class="btn mail-btn" id="mail-btn" onclick="sendMail(${avg.toFixed(2)},'${lv.key}','${rt.label}',${JSON.stringify(scores)})">📧 Send by Email</button>
+        <div class="success-msg" id="success-msg">✅ Your email has been prepared. Please send it from Outlook.</div>
       </div>
       <button class="btn" onclick="restart()" style="width:100%">← Retake Assessment</button>
     </div>`;

@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
 <title>AI Impact — Pre-Assessment</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
@@ -525,7 +527,7 @@ Performance Rating: ${rating}
 ${catScores}
 `);
   const cc = encodeURIComponent(email);
-  window.location.href = `mailto:k.endo@mki-us.com?cc=${cc}&subject=${subject}&body=${body}`;
+  window.location.href = `mailto:ai_assessment@mki-us.com?cc=${cc}&subject=${subject}&body=${body}`;
 }
 
 function restart(){Object.keys(answers).forEach(k=>delete answers[k]);current=0;document.getElementById("prev-btn").style.display="";document.getElementById("next-btn").style.display="";render();}
